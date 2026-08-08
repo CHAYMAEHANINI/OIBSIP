@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 📉 India Unemployment Analysis: The COVID-19 Shock
 
 **An exploratory data analysis of India's labour market before and during the COVID-19 pandemic (May 2019 – June 2020), uncovering how a nationwide lockdown reshaped employment across states, sectors, and seasons.**
