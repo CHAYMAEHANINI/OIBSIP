@@ -68,43 +68,68 @@ Result: a fully typed, duplicate-free, 740-row dataset with zero missing values.
 Each finding below is backed by a chart in the [`report/`](./report) folder.
 
 ### 1. Regional inequality was already severe — before COVID even hit
-`report/01_region_average_unemployment.png` · `report/04_top10_states_unemployment.png`
 
-Average unemployment across the full period ranged enormously by state. **Tripura (~26.5%) and Haryana (~25.5%)** sit at the top, followed by **Jharkhand and Bihar**, while **Karnataka, Gujarat, Uttarakhand, and Odisha** stayed as low as ~2.5%. This isn't a COVID story alone — it reflects structural differences in industrial base and agricultural employment between states.
+<img src="report/01_region_average_unemployment.png" width="700">
+
+**What the chart shows:** the average unemployment rate for every state, sorted highest to lowest.
+
+**In simple terms:** if unemployment were the same everywhere, this bar chart would look flat. It doesn't. **Tripura (~26.5%) and Haryana (~25.5%)** tower over the rest, while **Karnataka, Gujarat, Uttarakhand, and Odisha** sit near ~2.5%. That's a 10x gap between the best and worst states — this inequality exists independent of COVID and points to deeper structural differences in each state's job market.
+
+<img src="report/04_top10_states_unemployment.png" width="600">
+
+**What the chart shows:** a zoomed-in view of just the 10 worst-performing states.
+
+**In simple terms:** this confirms the same story with a tighter lens — **Tripura and Haryana lead**, followed closely by **Jharkhand and Bihar**. When the "worst 10" list stays this consistent across different views of the data, it's a reliable signal, not noise.
+
+---
 
 ### 2. April 2020 is the story's turning point
-`report/02_monthly_unemployment_trend.png`
 
-The monthly trend line is calm for most of the period (~9–10%) until it **spikes to ~24% in April 2020** — the month the nationwide lockdown took full effect. By October–December, the rate eases back toward 9–10%, tracing a **"V-shaped" recovery**.
+<img src="report/02_monthly_unemployment_trend.png" width="700">
+
+**What the chart shows:** the national average unemployment rate, month by month.
+
+**In simple terms:** this line is basically flat around 9–10% for months — then it shoots straight up to **~24% in April 2020**. That's the exact month India's COVID-19 lockdown began. After the spike, the line slowly drifts back down toward 9–10% by the end of the year, forming a shape like the letter **"V"** — a sharp fall, followed by a gradual recovery.
+
+---
 
 ### 3. The shock hit some states far harder than others
-`report/03_unemployment_time_series.png`
 
-Tracking Maharashtra, Delhi, and Tamil Nadu individually shows just how uneven the shock was:
-- **Tamil Nadu**: ~4% → **~47%**
-- **Delhi**: → **~20%**
-- **Maharashtra**: → **~16%**
+<img src="report/03_unemployment_time_series.png" width="750">
 
-All three were relatively stable (1–6%) throughout 2019 — the pandemic is the only variable that explains this divergence.
+**What the chart shows:** three individual states — Maharashtra, Delhi, and Tamil Nadu — tracked over time instead of averaged together.
+
+**In simple terms:** averages can hide extremes, so this chart checks individual states. The result is dramatic: **Tamil Nadu rockets from ~4% to ~47%** — meaning almost half its workforce was suddenly without work. Delhi and Maharashtra also spike, but less severely (~20% and ~16%). Before 2020, all three lines were calm and low. This tells us the lockdown's impact wasn't equal — some regional economies simply had further to fall.
+
+---
 
 ### 4. Employment metrics don't move together the way you'd expect
-`report/05_correlation_heatmap.png`
 
-A correlation matrix between unemployment rate, number employed, and labour participation rate reveals **near-zero correlation** (coefficients close to 0.02) between these variables. In plain terms: a state having more active job-seekers doesn't mean more of them found work. Labour participation alone is not a predictor of employment outcomes.
+<img src="report/05_correlation_heatmap.png" width="500">
+
+**What the chart shows:** a heatmap measuring how strongly three variables move together — unemployment rate, number employed, and labour participation rate. Values close to **+1** mean "move together strongly," close to **0** means "barely related," and close to **-1** means "move in opposite directions."
+
+**In simple terms:** unemployment rate and number employed have a **mild negative correlation (-0.22)** — when unemployment rises, the employed count tends to drop slightly, as you'd expect, but the relationship is weak, not a strong 1-to-1 swing. More strikingly, **labour participation rate is essentially uncorrelated with both** (values near 0). In other words, how many people are actively in the workforce tells you almost nothing about whether they'll end up employed or not — participation and outcomes are largely disconnected.
+
+---
 
 ### 5. The pandemic nearly doubled unemployment nationally
-`report/06_pre_vs_post_covid.png`
 
-Splitting the data at March 2020:
-- **Pre-COVID average**: 9.5%
-- **Post-COVID average**: 17.5%
+<img src="report/06_pre_vs_post_covid.png" width="500">
 
-That's an **~84% relative increase**, a direct, measurable fingerprint of the lockdown on the labour market.
+**What the chart shows:** a simple two-bar comparison — average unemployment before March 2020 vs. after.
+
+**In simple terms:** this is the clearest single summary of the whole crisis. **Pre-COVID: 9.5%. Post-COVID: 17.5%.** Almost double. One chart, one line of insight: the lockdown nearly doubled joblessness across the country.
+
+---
 
 ### 6. Rural and urban workers were both hit — but differently
-`report/07_urban_vs_rural.png`
 
-A box plot comparison shows Rural and Urban areas share a similar median and spread, but **Rural areas show a wider range of outliers**, suggesting pockets of extreme, localized unemployment spikes in the countryside that the urban aggregate doesn't capture as dramatically.
+<img src="report/07_urban_vs_rural.png" width="500">
+
+**What the chart shows:** a box plot comparing the spread of unemployment rates in Rural vs. Urban areas. The box shows where most values fall (the middle 50%), the line in the middle is the median, and the dots above are outliers (unusual extreme values).
+
+**In simple terms:** **Urban areas actually have a slightly higher typical unemployment rate** (median ~10%) than Rural areas (median ~7%), and a wider "normal" range. Both groups have extreme outlier months — a few regions spiked past 70% — but these outliers appear in both Rural and Urban data, showing the COVID shock wasn't confined to one setting. The takeaway: urban unemployment was consistently a bit higher day-to-day, while both rural and urban areas were equally capable of experiencing extreme, crisis-level spikes.
 
 ---
 
@@ -113,7 +138,7 @@ A box plot comparison shows Rural and Urban areas share a similar median and spr
 - Unemployment in India is not uniform — it's a patchwork shaped by state-level economic structure.
 - COVID-19 didn't create inequality, but it dramatically **amplified** it, with the April 2020 lockdown standing out as a clear before/after boundary.
 - Labour participation rate is **not** a reliable proxy for employment health — the two barely correlate.
-- Both rural and urban India absorbed the shock, just through different distributions of pain.
+- Urban areas ran a slightly higher baseline unemployment rate than rural areas, but both experienced extreme crisis-level spikes during the lockdown.
 
 ---
 
