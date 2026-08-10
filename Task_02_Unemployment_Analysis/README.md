@@ -196,6 +196,7 @@ Running the cleaning notebook regenerates `data/Unemployment_Cleaned.csv`; runni
 
 ## ✍️ Author
 
+<<<<<<< HEAD
 **Chaymae Hanini**
 =======
 # 📉 India Unemployment Analysis: The COVID-19 Shock
@@ -398,3 +399,6 @@ Running the cleaning notebook regenerates `data/Unemployment_Cleaned.csv`; runni
 
 **Chaymae Hanini**
 >>>>>>> db56c6a (Update OIBSIP Internship)
+=======
+**Chaymae Hanini**
+>>>>>>> e752a4c (Update OIBSIP Internship)
