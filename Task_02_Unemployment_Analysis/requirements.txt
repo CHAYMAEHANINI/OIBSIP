@@ -1,13 +1,6 @@
-<<<<<<< HEAD
 pandas
 numpy
 matplotlib
 seaborn
 jupyter
-=======
-pandas
-numpy
-matplotlib
-seaborn
-jupyter
->>>>>>> db56c6a (Update OIBSIP Internship)
+
