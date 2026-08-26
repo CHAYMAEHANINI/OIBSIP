@@ -77,7 +77,7 @@ OIBSIP/
 │   ├── requirements.txt
 │   └── README.md
 │
-└── README.md                          # You are here
+└── README.md                          
 ```
 
 Each task folder is fully self-contained with its own dataset, notebook(s), exported visualizations, trained model artifacts (where applicable), dependency list, and a dedicated deep-dive README.
