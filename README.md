@@ -1,6 +1,6 @@
 <div align="center">
 
-# OIBSIP — Data Science Internship Portfolio
+# OIBSIP — Data Science Internship 
 ### Oasis Infobyte Internship Program · Data Science Track
 
 [![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
@@ -168,12 +168,12 @@ Each notebook is self-contained and will regenerate its cleaned dataset, charts,
 
 ---
 
-## ✅ Guidelines Followed
+<!--## ✅ Guidelines Followed
 
 - All work is original and submitted in compliance with the internship's plagiarism policy.
 - Progress shared on LinkedIn as milestones were completed.
 - Each project includes a dedicated README documenting objective, approach, findings, and conclusions.
-- Submissions follow the required file naming convention: `Chaymae_Hanini_TaskNumber`.
+- Submissions follow the required file naming convention: `Chaymae_Hanini_TaskNumber`.-->
 
 ## 🎓 Certification
 
