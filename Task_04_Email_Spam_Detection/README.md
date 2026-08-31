@@ -126,7 +126,7 @@ prediction = model.predict(vect)[0]
 print("SPAM" if prediction == 1 else "HAM")
 ```
 
-## 🔧 Fixes Applied in This Version
+<!--## 🔧 Fixes Applied in This Version
 
 This version of the project addresses several gaps found in the original submission:
 
@@ -136,7 +136,7 @@ This version of the project addresses several gaps found in the original submiss
 - **Model persistence added**: the notebook previously had no code that produced `models/tfidf_naivebayes.pkl`. It now trains both models, selects the best one by F1-score, and pickles the **vectorizer and model together** (both are required at inference time) with `os.makedirs(..., exist_ok=True)` guards so the folders always exist.
 - **Inference example added**: a runnable cell demonstrates loading the saved artifact and classifying new, unseen messages.
 - **Reproducibility**: a single `RANDOM_STATE = 42` is used consistently across the train/test split, word cloud generation, and Logistic Regression (which previously had no fixed seed).
-- **Stray files cleaned up**: removed `.ipynb_checkpoints` directories that had been accidentally included in the deliverable.
+- **Stray files cleaned up**: removed `.ipynb_checkpoints` directories that had been accidentally included in the deliverable.-->
 
 ## 📈 Possible Future Improvements
 
